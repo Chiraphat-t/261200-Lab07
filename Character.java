@@ -19,7 +19,7 @@ public class Character {
         }
         else {
             this.stamina-=10;
-            System.out.println("Character swings the sword. Stamina is now "+stamina);
+            System.out.println("Character swings the sword. Stamina is now "+stamina+".");
         }
     }
 
@@ -27,11 +27,11 @@ public class Character {
         int hp = this.health-=damage;
         if(hp<=0){
             this.health = 0;
-            System.out.println("Character takes " + damage +" damage. Health is now "+health);
+            System.out.println("Character takes " + damage +" damage. Health is now "+ health +".");
             System.out.println("Character is dead.");
         }
         else {
-            System.out.println("Character takes " + damage +" damage. Health is now "+hp);
+            System.out.println("Character takes " + damage +" damage. Health is now "+hp+".");
         }
 
     }
@@ -40,11 +40,11 @@ public class Character {
         this.stamina=maxStamina;
         this.health=maxHealth;
         System.out.println("Character has rested. Health and stamina restored to maximum.");
-        System.out.println("Character's health: "+maxHealth+", stamina: "+maxStamina);
+        System.out.println("Character's health: "+maxHealth+", stamina: "+maxStamina+".");
     }
 
     public void show(){
-        System.out.println("Character's health: "+this.health+", stamina: "+this.stamina);
+        System.out.println("Character's health: "+this.health+", stamina: "+this.stamina+".");
     }
 
 }
